@@ -15,7 +15,7 @@ function verificar () {
          img.setAttribute('id', 'foto')
 
          if (fsex[0].checked) {
-             genero = 'Homem'
+             genero = 'um <strong>Homem</strong>'
 
              if (idade <= 10) {
                  //Crianca   
@@ -33,7 +33,7 @@ function verificar () {
 
 
          } else if (fsex[1].checked) {
-            genero = 'Mulher'
+            genero = 'uma <strong>Mulher</strong>'
 
             if (idade <= 10) {
                 //Crianca   
@@ -50,7 +50,7 @@ function verificar () {
             }
          }
          res.style.textAlign = 'center'
-         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+         res.innerHTML = `Detectamos ${genero} com <strong>${idade} anos</strong>.`
          res.appendChild(img) //adiciona coloca em apendice ao filho div
     }
 
